@@ -3,7 +3,7 @@ module Part1 =
     let splitLines (s:string) =
         List.ofSeq(s.Split([|'\n'|]))
 
-    let lines = 
+    let answer = 
         System.IO.File.ReadAllText("./Day1/input.txt")
         |> splitLines
         |> List.fold(fun (state: list<int>) element ->
