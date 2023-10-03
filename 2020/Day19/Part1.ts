@@ -24,8 +24,6 @@ const rules = parts[0]
         }
     })
 
-const finalRule = [] as number[]
-
 const find = (key: number) => {
     const rule = rules.find(item => item.key === key)
 
@@ -44,8 +42,4 @@ const find = (key: number) => {
     return [a1, a2]
 }
 
-const rule = find(0)[0]
-console.log(JSON.stringify(rule))
-
-const input = [] as string[]
-
+console.log(JSON.stringify(find(0)[0]))
