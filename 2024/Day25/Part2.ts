@@ -1,1 +1,0 @@
-const input = await Deno.readTextFile("/Day25/input.txt");
