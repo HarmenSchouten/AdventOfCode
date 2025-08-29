@@ -5,10 +5,10 @@ const items = [] as number[]
 const sumNumbers = (obj: unknown) => {
     if (typeof (obj) === 'object') {
         if (Array.isArray(obj)) {
-            obj.forEach((acc, item) => acc + sumNumbers(item), 0)
+            obj.forEach((item) => sumNumbers(item))
         } else {
             if (!Object.values(obj as object).includes("red")) {
-                Object.values(obj as object).forEach((acc, item) => acc + sumNumbers(item), 0)
+                Object.values(obj as object).forEach((item) => sumNumbers(item))
             }
         }
     } else {
