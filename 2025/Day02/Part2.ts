@@ -13,8 +13,7 @@ const answer = input
         return { start: Number(start), end: Number(end) }
     })
     .reduce((acc, state) => {
-        for (let i = state.start; i < state.end; i++)
-        {
+        for (let i = state.start; i < state.end; i++) {
             const numberString = String(i)
             const matches = regex.test(numberString)
             if (matches) acc += i

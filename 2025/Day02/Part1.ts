@@ -8,8 +8,7 @@ const answer = input
         return { start: Number(start), end: Number(end) }
     })
     .reduce((acc, state) => {
-        for (let i = state.start; i < state.end; i++)
-        {
+        for (let i = state.start; i < state.end; i++) {
             const numberString = String(i)
             if (numberString.length % 2 === 1) continue;
 
