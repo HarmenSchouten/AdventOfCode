@@ -22,6 +22,3 @@ const answer = input
     }, 0)
 
 console.log(answer)
-
-
-
