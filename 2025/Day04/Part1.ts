@@ -6,10 +6,10 @@ const grid = new Grid2D<string>(input, v => v)
 
 const answer = grid
     .filter(x => 
-            x.value === '@' 
-            && x.getAllNeighbours()
-                .map(x => x?.value)
-                .filter(x => x === '@').length < 4)
+        x.value === '@' 
+        && x.getAllNeighbours()
+            .map(x => x?.value)
+            .filter(x => x === '@').length < 4)
     .length
 
 console.log(answer)
