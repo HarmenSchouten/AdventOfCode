@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("Day08/input.txt");
 
 const junctionBoxes = input

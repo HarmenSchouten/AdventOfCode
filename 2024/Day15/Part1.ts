@@ -1,5 +1,5 @@
-import { Grid2D } from "../utils/grid2d.ts";
-import "../utils/index.ts"
+import { Grid2D } from "../../utils/grid2d.ts";
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./Day15/input.txt");
 
 const [gridInput, operationsInput] = input.splitDlb();

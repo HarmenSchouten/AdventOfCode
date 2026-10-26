@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./day03/input.txt")
 
 const current = [0, 0, 0, 0]

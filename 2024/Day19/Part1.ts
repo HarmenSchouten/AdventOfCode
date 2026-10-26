@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./Day19/input.txt");
 
 const [towelsStr, patternsLines] = input.splitDlb();

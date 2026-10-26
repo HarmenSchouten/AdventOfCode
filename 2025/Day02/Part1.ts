@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("Day02/input.txt");
 
 const answer = input

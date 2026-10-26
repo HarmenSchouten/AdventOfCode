@@ -1,6 +1,6 @@
-import { Grid } from "../utils/grid.ts";
-import { GridCell } from "../utils/gridCell.ts";
-import "../utils/index.ts"
+import { Grid } from "../../utils/grid.ts";
+import { GridCell } from "../../utils/gridCell.ts";
+import "../../utils/index.ts"
 
 type QueueItem = {
     cell: GridCell<string>

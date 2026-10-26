@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./Day17/input.txt");
 const numbers = input.match(/\d+/g)!.map(Number)
 const computer = {

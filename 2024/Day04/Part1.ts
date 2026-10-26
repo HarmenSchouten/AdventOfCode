@@ -1,5 +1,5 @@
-import { Grid } from "../utils/grid.ts";
-import "../utils/index.ts"
+import { Grid } from "../../utils/grid.ts";
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./Day04/input.txt");
 
 const grid = new Grid(input, (v) => String(v))

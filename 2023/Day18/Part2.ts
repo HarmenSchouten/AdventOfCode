@@ -1,5 +1,5 @@
-import "../utils/index.ts"
-import { Point, picksTheoremInnerBoundaries } from "../utils/index.ts";
+import "../../utils/index.ts"
+import { Point, picksTheoremInnerBoundaries } from "../../utils/index.ts";
 
 const directionMap = { "0": "R", "1": "D", "2": "L", "3": "U" } as Record<string, string>
 

@@ -1,5 +1,5 @@
-import "../utils/index.ts"
-import { memoize } from "../utils/index.ts";
+import "../../utils/index.ts"
+import { memoize } from "../../utils/index.ts";
 
 const text = await Deno.readTextFile("./Day12/input.txt")
 const rows = text

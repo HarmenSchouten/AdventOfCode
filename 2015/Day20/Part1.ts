@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 
 const target = 29000000;
 const max = 1000000;

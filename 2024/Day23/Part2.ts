@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./Day23/input.txt");
 
 const graph = {} as Record<string, Set<string>>

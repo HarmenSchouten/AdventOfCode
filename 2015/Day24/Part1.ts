@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./day24/input.txt")
 
 const packages = input.ints().sort((a, b) => a - b)

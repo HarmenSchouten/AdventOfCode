@@ -1,0 +1,3 @@
+# Puzzle inputs are personal; Advent of Code asks not to publish them
+*.txt
+node_modules/

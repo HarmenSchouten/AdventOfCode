@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./day19/input.txt")
 
 const [combinationStr, molecule] = input.split("\r\n\r\n")

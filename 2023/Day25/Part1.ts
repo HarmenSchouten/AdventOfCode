@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 import { mincut } from "npm:@graph-algorithm/minimum-cut"
 
 const text = await Deno.readTextFile("./Day25/input.txt")

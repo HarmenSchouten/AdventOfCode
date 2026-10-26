@@ -1,5 +1,5 @@
-import "../utils/index.ts"
-import { Point, picksTheoremInnerBoundaries } from "../utils/index.ts";
+import "../../utils/index.ts"
+import { Point, picksTheoremInnerBoundaries } from "../../utils/index.ts";
 
 const text = await Deno.readTextFile("./Day18/input.txt")
 

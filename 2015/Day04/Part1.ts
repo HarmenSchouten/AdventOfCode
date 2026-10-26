@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 import * as crypto from 'node:crypto'
 const input = await Deno.readTextFile("./day04/input.txt")
 

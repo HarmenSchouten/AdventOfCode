@@ -1,4 +1,4 @@
-import "../utils/index.ts"
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./day15/input.txt")
 
 const parsed = input.splitLb().map(x => x.match(/-?\d+/g)?.map(Number) ?? [])

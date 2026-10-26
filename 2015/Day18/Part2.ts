@@ -1,5 +1,5 @@
-import { Grid2D } from "../utils/grid2d.ts";
-import "../utils/index.ts"
+import { Grid2D } from "../../utils/grid2d.ts";
+import "../../utils/index.ts"
 const input = await Deno.readTextFile("./day18/input.txt")
 
 const grid = new Grid2D<string>(input)
