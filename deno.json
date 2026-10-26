@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "solve": {
+      "description": "Run a day's solutions: deno task solve <year> <day> [part]",
+      "command": "deno run --allow-read --allow-run scripts/solve.ts"
+    },
+    "new": {
+      "description": "Scaffold a day (downloads the input when AOC_SESSION is set): deno task new <year> <day>",
+      "command": "deno run --allow-read --allow-write --allow-env=AOC_SESSION --allow-net=adventofcode.com scripts/new.ts"
+    },
+    "readme": {
+      "description": "Regenerate the year READMEs and the root progress table",
+      "command": "deno run --allow-read --allow-write scripts/readme.ts"
+    }
+  }
+}
