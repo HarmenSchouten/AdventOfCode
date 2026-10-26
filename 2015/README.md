@@ -1,6 +1,6 @@
 # Advent of Code 2015
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2015) · **49 / 49** parts solved
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2015) · **50 / 50** stars
 
 `★★★★★ ★★★★★ ★★★★★ ★★★★★ ★★★★★`
 
@@ -30,9 +30,9 @@
 | 22 | [Wizard Simulator 20XX](https://adventofcode.com/2015/day/22) | [★](Day22/Part1.ts) | [★](Day22/Part2.ts) |  |
 | 23 | [Opening the Turing Lock](https://adventofcode.com/2015/day/23) | [★](Day23/Part1.ts) | [★](Day23/Part2.ts) |  |
 | 24 | [It Hangs in the Balance](https://adventofcode.com/2015/day/24) | [★](Day24/Part1.ts) | [★](Day24/Part2.ts) |  |
-| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | [★](Day25/Part1.ts) | — |  |
+| 25 | [Let It Snow](https://adventofcode.com/2015/day/25) | [★](Day25/Part1.ts) | ★ | Second star earned by finishing every other puzzle |
 
-★ links to the solution · `·` not solved yet · — day 25 has a single puzzle
+★ links to the solution · `·` not solved yet · day 25 has a single puzzle; its second star is awarded once every other star is earned
 
 Run a day from the repository root with `deno task solve 2015 <day>`.
 

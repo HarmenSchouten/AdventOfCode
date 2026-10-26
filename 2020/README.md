@@ -1,6 +1,6 @@
 # Advent of Code 2020
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2020) · **37 / 49** parts solved
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2020) · **37 / 50** stars
 
 `★★★★★ ★★★★★ ★★★★★ ★★★☆· ·····`
 
@@ -30,9 +30,9 @@
 | 22 | [Day 22](https://adventofcode.com/2020/day/22) | · | · |  |
 | 23 | [Day 23](https://adventofcode.com/2020/day/23) | · | · |  |
 | 24 | [Day 24](https://adventofcode.com/2020/day/24) | · | · |  |
-| 25 | [Day 25](https://adventofcode.com/2020/day/25) | · | — |  |
+| 25 | [Day 25](https://adventofcode.com/2020/day/25) | · | · |  |
 
-★ links to the solution · `·` not solved yet · — day 25 has a single puzzle
+★ links to the solution · `·` not solved yet · day 25 has a single puzzle; its second star is awarded once every other star is earned
 
 Run a day from the repository root with `deno task solve 2020 <day>`.
 

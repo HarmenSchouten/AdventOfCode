@@ -9,6 +9,8 @@ type Day = {
     folder: string
     part1?: string
     part2?: string
+    /** The last day's second star: awarded for having every other star of the year */
+    gift?: boolean
     notes: string[]
     langs: Set<string>
 }
@@ -60,16 +62,18 @@ const scanYear = async (year: number) => {
         if (d === daysIn(year)) entry.part2 = undefined
         days.push(entry)
     }
+    const last = days.at(-1)!
+    last.gift = !!last.part1 && days.slice(0, -1).every(d => d.part1 && d.part2)
     return days
 }
 
-const isDone = (year: number, d: Day) => d.day === daysIn(year) ? !!d.part1 : !!(d.part1 && d.part2)
-const solvedParts = (days: Day[]) => days.reduce((n, d) => n + (d.part1 ? 1 : 0) + (d.part2 ? 1 : 0), 0)
-const totalParts = (year: number) => daysIn(year) * 2 - 1
+const isDone = (d: Day) => !!(d.part1 && (d.part2 || d.gift))
+const stars = (days: Day[]) => days.reduce((n, d) => n + (d.part1 ? 1 : 0) + (d.part2 || d.gift ? 1 : 0), 0)
+const totalStars = (year: number) => daysIn(year) * 2
 
 // One glyph per day, grouped in fives like the weeks of a calendar
-const strip = (year: number, days: Day[]) => days
-    .map(d => isDone(year, d) ? "★" : d.part1 || d.part2 ? "☆" : "·")
+const strip = (days: Day[]) => days
+    .map(d => isDone(d) ? "★" : d.part1 || d.part2 ? "☆" : "·")
     .join("")
     .replace(/(.{5})(?=.)/gu, "$1 ")
 
@@ -78,29 +82,30 @@ const summary: { year: number, solved: number, total: number, strip: string, lan
 
 for (const year of years) {
     const days = await scanYear(year)
-    const solved = solvedParts(days)
+    const solved = stars(days)
     const langs = [...new Set(days.flatMap(d => [...d.langs]))].sort((a, b) => Object.keys(LANGS).indexOf(a) - Object.keys(LANGS).indexOf(b)).map(l => LANGS[l])
-    summary.push({ year, solved, total: totalParts(year), strip: strip(year, days), langs })
+    summary.push({ year, solved, total: totalStars(year), strip: strip(days), langs })
 
     const cell = (d: Day, file?: string) => file ? `[★](${d.folder}/${file})` : "·"
     const rows = days.map(d => {
         const title = titles[`${year}/${d.day}`]
         const puzzle = `[${title ?? `Day ${d.day}`}](https://adventofcode.com/${year}/day/${d.day})`
-        const p2 = d.day === daysIn(year) ? "—" : cell(d, d.part2)
-        return `| ${d.day} | ${puzzle} | ${cell(d, d.part1)} | ${p2} | ${d.notes.join(" · ")} |`
+        const p2 = d.day === daysIn(year) ? (d.gift ? "★" : "·") : cell(d, d.part2)
+        const notes = d.gift ? [...d.notes, "Second star earned by finishing every other puzzle"] : d.notes
+        return `| ${d.day} | ${puzzle} | ${cell(d, d.part1)} | ${p2} | ${notes.join(" · ")} |`
     })
 
     const md = `# Advent of Code ${year}
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/${year}) · **${solved} / ${totalParts(year)}** parts solved
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/${year}) · **${solved} / ${totalStars(year)}** stars
 
-\`${strip(year, days)}\`
+\`${strip(days)}\`
 
 | Day | Puzzle | Part 1 | Part 2 | Notes |
 |:-:|---|:-:|:-:|---|
 ${rows.join("\n")}
 
-★ links to the solution · \`·\` not solved yet · — day ${daysIn(year)} has a single puzzle
+★ links to the solution · \`·\` not solved yet · day ${daysIn(year)} has a single puzzle; its second star is awarded once every other star is earned
 
 Run a day from the repository root with \`deno task solve ${year} <day>\`.
 
@@ -113,13 +118,13 @@ Run a day from the repository root with \`deno task solve ${year} <day>\`.
 const solvedTotal = summary.reduce((n, s) => n + s.solved, 0)
 const partsTotal = summary.reduce((n, s) => n + s.total, 0)
 const badges = [
-    `![Parts solved](https://img.shields.io/badge/parts_solved-${solvedTotal}%2F${partsTotal}-ffff66?style=flat-square&labelColor=0f0f23)`,
+    `![Stars](https://img.shields.io/badge/stars-${solvedTotal}%2F${partsTotal}-ffff66?style=flat-square&labelColor=0f0f23)`,
     `![Years](https://img.shields.io/badge/years-${summary.length}-009900?style=flat-square&labelColor=0f0f23)`,
     `![Deno](https://img.shields.io/badge/Deno-2-ffffff?style=flat-square&logo=deno&labelColor=0f0f23)`,
     `![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white&labelColor=0f0f23)`,
 ].join("\n")
 const progress = [
-    "| Year | Calendar | Solved | Languages |",
+    "| Year | Calendar | Stars | Languages |",
     "|:-:|---|--:|---|",
     ...summary.toReversed().map(s => `| [**${s.year}**](${s.year}/README.md) | \`${s.strip}\` | ${s.solved} / ${s.total} | ${s.langs.join(", ")} |`),
     `| | | **${solvedTotal} / ${partsTotal}** | |`,
@@ -136,4 +141,4 @@ fill("badges", badges)
 fill("progress", progress)
 await Deno.writeTextFile(readmeUrl, readme)
 
-console.log(`Updated ${summary.length} year READMEs and the root README (${solvedTotal} / ${partsTotal} parts)`)
+console.log(`Updated ${summary.length} year READMEs and the root README (${solvedTotal} / ${partsTotal} stars)`)

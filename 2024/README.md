@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2024) · **49 / 49** parts solved
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2024) · **50 / 50** stars
 
 `★★★★★ ★★★★★ ★★★★★ ★★★★★ ★★★★★`
 
@@ -30,9 +30,9 @@
 | 22 | [Monkey Market](https://adventofcode.com/2024/day/22) | [★](Day22/Part1.ts) | [★](Day22/Part2.ts) |  |
 | 23 | [LAN Party](https://adventofcode.com/2024/day/23) | [★](Day23/Part1.ts) | [★](Day23/Part2.ts) |  |
 | 24 | [Crossed Wires](https://adventofcode.com/2024/day/24) | [★](Day24/Part1.ts) | [★](Day24/Part2.ts) |  |
-| 25 | [Code Chronicle](https://adventofcode.com/2024/day/25) | [★](Day25/Part1.ts) | — |  |
+| 25 | [Code Chronicle](https://adventofcode.com/2024/day/25) | [★](Day25/Part1.ts) | ★ | Second star earned by finishing every other puzzle |
 
-★ links to the solution · `·` not solved yet · — day 25 has a single puzzle
+★ links to the solution · `·` not solved yet · day 25 has a single puzzle; its second star is awarded once every other star is earned
 
 Run a day from the repository root with `deno task solve 2024 <day>`.
 
