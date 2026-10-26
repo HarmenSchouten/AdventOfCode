@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day01/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const numbers:Record<string, number> = {
     one: 1,
     two: 2,

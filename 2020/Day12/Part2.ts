@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day12/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 let shipX = 0, shipY = 0, waypointX = 10, waypointY = -1
 

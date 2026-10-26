@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("Day03/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const targetLength = 12;
 const answer = input

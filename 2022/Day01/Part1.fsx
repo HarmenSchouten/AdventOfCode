@@ -4,7 +4,7 @@ module Part1 =
         List.ofSeq(s.Split([|'\n'|]))
 
     let answer = 
-        System.IO.File.ReadAllText("./Day1/input.txt")
+        System.IO.File.ReadAllText(System.IO.Path.Combine(__SOURCE_DIRECTORY__, "input.txt"))
         |> splitLines
         |> List.fold(fun (state: list<int>) element ->
             if (element.Trim() = "") then  

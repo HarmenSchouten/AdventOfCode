@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./day12/input.txt")
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const items = [] as number[]
 const sumNumbers = (obj: unknown) => {

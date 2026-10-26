@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./Day22/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 const numbers = input.splitLb().map(BigInt)
 
 const mul64 = (a: bigint) => a * BigInt(64)

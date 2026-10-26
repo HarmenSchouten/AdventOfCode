@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day15/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 // With some help we did it. I'm the worst at this.
 function solve() {

@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day09/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const numbers = text.split("\r\n").map(Number)
 

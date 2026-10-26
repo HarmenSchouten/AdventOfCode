@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day02/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const isValid = (index1: number, index2: number, char: string, password: string) => {
     const isOnIndex1 = password?.[index1] === char

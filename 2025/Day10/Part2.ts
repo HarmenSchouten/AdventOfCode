@@ -2,7 +2,7 @@ const { init } = require('z3-solver')
 const { readFileSync } = require('fs')
 
 const main = async () => {
-    const input = readFileSync("./Day10/input.txt", 'utf8')
+    const input = readFileSync(`${__dirname}/input.txt`, 'utf8')
 
     const machines = input
         .split("\r\n")

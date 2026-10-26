@@ -1,6 +1,6 @@
 import { Grid2D } from "../../utils/grid2d.ts";
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./Day06/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const grid = new Grid2D(input, v => String(v))
 

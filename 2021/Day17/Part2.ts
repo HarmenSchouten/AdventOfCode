@@ -10,7 +10,7 @@ type Coord = {
     y: number
 }
 
-const text = await Deno.readTextFile("./Day17/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const line = text.split("\r\n")[0]!.split(" ").filter(item => item.startsWith("x") || item.startsWith("y"))
 
 const targetArea = SetTargetArea(line)

@@ -4,7 +4,7 @@ const { init } = require('z3-solver')
 const { readFileSync } = require('fs')
 
 const main =  async () => {
-    const text = readFileSync("./Day24/input.txt", 'utf8')
+    const text = readFileSync(`${__dirname}/input.txt`, 'utf8')
 
     const lines = text
         .split("\r\n")

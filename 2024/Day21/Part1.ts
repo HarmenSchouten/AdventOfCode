@@ -1,6 +1,6 @@
 import { Grid2D } from "../../utils/grid2d.ts";
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./Day21/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const numpad = new Grid2D('789\r\n456\r\n123\r\n 0A')
 const dirpad = new Grid2D(' ^A\r\n<v>')

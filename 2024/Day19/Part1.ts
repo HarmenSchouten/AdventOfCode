@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./Day19/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const [towelsStr, patternsLines] = input.splitDlb();
 const towels = towelsStr.split(", ").filter(item => item.length > 0)

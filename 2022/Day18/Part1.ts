@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day18/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const items = text.split("\r\n")
 
 const blocks: Record<string, number> = {}

@@ -1,1 +1,1 @@
-const input = await Deno.readTextFile("/Day21/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));

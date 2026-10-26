@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day1/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 console.log(text.split("\r\n").reduce((acc, item) => {
     item.trim() === ""

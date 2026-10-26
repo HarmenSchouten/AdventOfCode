@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day22/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const directionMap = { R: 90, L: 270, U: 0, D: 180 } as Record<string, number>
 

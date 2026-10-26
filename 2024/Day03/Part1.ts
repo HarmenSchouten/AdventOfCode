@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("./Day03/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const validItems = input.match(/(mul\(\d*,\d*\))/g) ?? []
 

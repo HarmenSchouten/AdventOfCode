@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./day07/input.txt")
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const wires = new Map<string, number>()
 const visited = new Set<string>()

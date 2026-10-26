@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day12/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const items = text.split("\r\n")
 
 const grid = items.reduce((acc, line) => [...acc, [...line].reduce((subAcc, number) => [...subAcc, number], [] as string[])], [] as string[][])

@@ -3,7 +3,7 @@ import { Point, picksTheoremInnerBoundaries } from "../../utils/index.ts";
 
 const directionMap = { "0": "R", "1": "D", "2": "L", "3": "U" } as Record<string, string>
 
-const text = await Deno.readTextFile("./Day18/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const input = text.splitLb().map(line => {
     const [_,__, rest] = line.split(" ")

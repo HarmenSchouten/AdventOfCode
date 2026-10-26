@@ -1,7 +1,7 @@
 type Resource = 'ore' | 'clay' | 'obsidian' | 'geode'
 type BotRequirements = Record<Resource, number>
 
-const text = await Deno.readTextFile("./Day19/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const blueprints = text
     .toLowerCase()
     .split('\r\n')

@@ -7,7 +7,7 @@ type Point = {
 
 const pointToKey = (point: Point) => `${point.x},${point.y}`
 
-const text = await Deno.readTextFile("./Day10/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const grid = text.splitLb()
 const height = grid.length

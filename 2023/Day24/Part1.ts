@@ -1,6 +1,6 @@
 import "../../utils/index.ts"
 
-const text = await Deno.readTextFile("./Day24/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 type Line = {
     positionA: { x: number, y: number },

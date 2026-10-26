@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day02/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const isValid = (min: number, max: number, char: string, password: string) => {
     const count = password.split(char).length - 1

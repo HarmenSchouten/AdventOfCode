@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./Day24/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const [wireLines, gateLines] = input.splitDlb();
 

@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day24/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const lines = text.split("\r\n")
 const lineLength = lines[0].length - 1

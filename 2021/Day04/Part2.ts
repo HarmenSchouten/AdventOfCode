@@ -6,7 +6,7 @@ type WinningBoard = {
 
 // ================================================ ///
 
-const text = await Deno.readTextFile("./Day4/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const items = text.split("\r\n")
 

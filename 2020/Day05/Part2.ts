@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day05/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const getUpperBound = (min: number, max: number) =>
     min + Math.ceil((max - min) / 2)

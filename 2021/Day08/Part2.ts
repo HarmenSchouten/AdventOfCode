@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day8/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const lines = text.split("\r\n")
 
 //const CombineDistinct = (a:string, b:string):string => [...(a + b)].reduce((acc, state) => [...acc].includes(state) ? acc : acc + state, '');

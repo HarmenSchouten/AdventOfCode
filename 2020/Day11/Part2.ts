@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day11/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 let seats = text.split("\r\n").map(item => [...item])
 

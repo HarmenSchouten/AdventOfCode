@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("./day24/input.txt")
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const packages = input.ints().sort((a, b) => a - b)
 const total = packages.sum()

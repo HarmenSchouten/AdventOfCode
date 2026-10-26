@@ -2,7 +2,7 @@ import "../../utils/index.ts"
 
 type Range = Record<string, [number, number]>;
 
-const text = await Deno.readTextFile("./Day19/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const [r, _] = text.splitDlb();
 

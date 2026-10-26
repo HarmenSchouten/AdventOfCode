@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day06/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const sumCount = text
     .split("\r\n\r\n")

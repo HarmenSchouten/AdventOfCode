@@ -1,6 +1,6 @@
 import "../../utils/index.ts"
 
-const input = await Deno.readTextFile("./day23/input.txt")
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const instructions = input.splitLb().map(line => {
     const parts = line.split(/[, ]+/)

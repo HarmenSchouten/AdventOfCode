@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("./Day02/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const isLineSafe = (items: number[]) => {
     return items.every((item, idx, arr) => {

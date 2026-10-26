@@ -5,7 +5,7 @@ const getHeight = (char:string) => {
     return heights.indexOf(char);
 }
 
-const inputFull = await Deno.readTextFile("Day12/input.txt");
+const inputFull = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 const grid = inputFull
   .split("\n")
   .filter((line) => line !== "")

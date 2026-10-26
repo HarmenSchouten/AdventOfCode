@@ -1,5 +1,5 @@
 // deno-lint-ignore-file no-explicit-any
-const text = await Deno.readTextFile("./Day13/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 const items = text.split("\r\n")
 
 const compare = (left: any, right: any):any => {

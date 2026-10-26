@@ -1,6 +1,6 @@
 import "../../utils/index.ts"
 import * as crypto from 'node:crypto'
-const input = await Deno.readTextFile("./day04/input.txt")
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 let i = 0;
 while (true) {

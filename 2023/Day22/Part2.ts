@@ -12,7 +12,7 @@ type Brick = {
     end: Coord
 }
 
-const text = await Deno.readTextFile("./Day22/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 const bricks = text
     .splitLb()

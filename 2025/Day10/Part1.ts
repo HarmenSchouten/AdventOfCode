@@ -1,5 +1,5 @@
 import "../../utils/index.ts"
-const input = await Deno.readTextFile("Day10/input.txt");
+const input = await Deno.readTextFile(new URL("./input.txt", import.meta.url));
 
 const machines = input
     .splitLb()

@@ -1,4 +1,4 @@
-const text = await Deno.readTextFile("./Day12/input.txt")
+const text = await Deno.readTextFile(new URL("./input.txt", import.meta.url))
 
 let currentDirection = "E"
 const directionMap = {"N": 0, "E": 90, "S": 180, "W": 270}

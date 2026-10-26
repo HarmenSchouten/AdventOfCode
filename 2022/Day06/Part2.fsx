@@ -5,7 +5,7 @@ module Part2 =
     let mutable tracker:array<string> = Array.empty
 
     let _answer =  
-        System.IO.File.ReadAllText("./Day6/input.txt")
+        System.IO.File.ReadAllText(System.IO.Path.Combine(__SOURCE_DIRECTORY__, "input.txt"))
         |> fun line -> line.Split [|'\n'|]
         |> fun lines -> lines[0]
         |> Seq.iteri(fun idx char ->
