@@ -1,8 +1,8 @@
 # Advent of Code 2025
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2025) · **22 / 24** stars
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2025) · **24 / 24** stars
 
-`★★★★★ ★★★★★ ★·`
+`★★★★★ ★★★★★ ★★`
 
 | Day | Puzzle | Part 1 | Part 2 | Notes |
 |:-:|---|:-:|:-:|---|
@@ -17,7 +17,7 @@
 | 9 | [Movie Theater](https://adventofcode.com/2025/day/9) | [★](Day09/Part1.ts) | [★](Day09/Part2.ts) |  |
 | 10 | [Factory](https://adventofcode.com/2025/day/10) | [★](Day10/Part1.ts) | [★](Day10/Part2.ts) | Part 2 uses the [z3](https://github.com/Z3Prover/z3) SMT solver and runs on Node |
 | 11 | [Reactor](https://adventofcode.com/2025/day/11) | [★](Day11/Part1.ts) | [★](Day11/Part2.ts) |  |
-| 12 | [Day 12](https://adventofcode.com/2025/day/12) | · | · |  |
+| 12 | [Christmas Tree Farm](https://adventofcode.com/2025/day/12) | [★](Day12/Part1.ts) | ★ | Second star earned by finishing every other puzzle |
 
 ★ links to the solution · `·` not solved yet · day 12 has a single puzzle; its second star is awarded once every other star is earned
 
