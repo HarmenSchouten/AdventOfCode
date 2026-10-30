@@ -6,7 +6,7 @@ My solutions to [Advent of Code](https://adventofcode.com), Eric Wastl's yearly 
 Mostly TypeScript on Deno, with detours into F#, C# and an SMT solver.
 
 <!-- generated:badges -->
-![Stars](https://img.shields.io/badge/stars-300%2F374-ffff66?style=flat-square&labelColor=0f0f23)
+![Stars](https://img.shields.io/badge/stars-302%2F374-ffff66?style=flat-square&labelColor=0f0f23)
 ![Years](https://img.shields.io/badge/years-8-009900?style=flat-square&labelColor=0f0f23)
 ![Deno](https://img.shields.io/badge/Deno-2-ffffff?style=flat-square&logo=deno&labelColor=0f0f23)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white&labelColor=0f0f23)
@@ -25,9 +25,9 @@ Mostly TypeScript on Deno, with detours into F#, C# and an SMT solver.
 | [**2022**](2022/README.md) | `★★★★★ ★★★★★ ★★★★★ ★★★★★ ★★★★★` | 50 / 50 | TypeScript, F# |
 | [**2021**](2021/README.md) | `★★★★★ ★★★★★ ★★★★★ ★★☆·· ·····` | 35 / 50 | TypeScript |
 | [**2020**](2020/README.md) | `★★★★★ ★★★★★ ★★★★★ ★★★☆· ·····` | 37 / 50 | TypeScript |
-| [**2016**](2016/README.md) | `★★··· ····· ····· ····· ·····` | 4 / 50 | TypeScript |
+| [**2016**](2016/README.md) | `★★★·· ····· ····· ····· ·····` | 6 / 50 | TypeScript |
 | [**2015**](2015/README.md) | `★★★★★ ★★★★★ ★★★★★ ★★★★★ ★★★★★` | 50 / 50 | TypeScript |
-| | | **300 / 374** | |
+| | | **302 / 374** | |
 <!-- /generated:progress -->
 
 <sub>One glyph per day, in weeks of five: ★ both parts · ☆ one part · `·` not solved yet. A star means there's a solution file for it here; the last day's second star is awarded once every other star of the year is earned. Click a year for the full list of puzzles.</sub>
