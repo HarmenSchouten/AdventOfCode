@@ -106,11 +106,3 @@ const total = numbers.sum()
 ├── scripts/            the solve, new and readme tasks
 └── deno.json
 ```
-
-## History
-
-This repository merges seven per-year repositories (AOC2015 and AOC2020 to AOC2025). Their full commit history was rewritten into the year folders, so `git log --follow 2015/Day24/Part1.ts` reaches all the way back to the original commits.
-
-<div align="center">
-<sub>Puzzles, stories and inputs are © <a href="https://adventofcode.com/about">Eric Wastl</a>. Only the code in this repository is mine.</sub>
-</div>
