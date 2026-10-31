@@ -1,8 +1,8 @@
 # Advent of Code 2021
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2021) · **35 / 50** stars
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2021) · **36 / 50** stars
 
-`★★★★★ ★★★★★ ★★★★★ ★★☆·· ·····`
+`★★★★★ ★★★★★ ★★★★★ ★★☆☆· ·····`
 
 | Day | Puzzle | Part 1 | Part 2 | Notes |
 |:-:|---|:-:|:-:|---|
@@ -24,7 +24,7 @@
 | 16 | [Packet Decoder](https://adventofcode.com/2021/day/16) | [★](Day16/Part1.ts) | [★](Day16/Part2.ts) |  |
 | 17 | [Trick Shot](https://adventofcode.com/2021/day/17) | [★](Day17/Part1.ts) | [★](Day17/Part2.ts) |  |
 | 18 | [Snailfish](https://adventofcode.com/2021/day/18) | [★](Day18/Part1.ts) | · |  |
-| 19 | [Day 19](https://adventofcode.com/2021/day/19) | · | · |  |
+| 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | [★](Day19/Part1.ts) | · |  |
 | 20 | [Day 20](https://adventofcode.com/2021/day/20) | · | · |  |
 | 21 | [Day 21](https://adventofcode.com/2021/day/21) | · | · |  |
 | 22 | [Day 22](https://adventofcode.com/2021/day/22) | · | · |  |
