@@ -1,15 +1,15 @@
 # Advent of Code 2016
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2016) · **6 / 50** stars
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2016) · **8 / 50** stars
 
-`★★★·· ····· ····· ····· ·····`
+`★★★★· ····· ····· ····· ·····`
 
 | Day | Puzzle | Part 1 | Part 2 | Notes |
 |:-:|---|:-:|:-:|---|
 | 1 | [No Time for a Taxicab](https://adventofcode.com/2016/day/1) | [★](Day01/Part1.ts) | [★](Day01/Part2.ts) |  |
 | 2 | [Bathroom Security](https://adventofcode.com/2016/day/2) | [★](Day02/Part1.ts) | [★](Day02/Part2.ts) |  |
 | 3 | [Squares With Three Sides](https://adventofcode.com/2016/day/3) | [★](Day03/Part1.ts) | [★](Day03/Part2.ts) |  |
-| 4 | [Day 4](https://adventofcode.com/2016/day/4) | · | · |  |
+| 4 | [Security Through Obscurity](https://adventofcode.com/2016/day/4) | [★](Day04/Part1.ts) | [★](Day04/Part2.ts) |  |
 | 5 | [Day 5](https://adventofcode.com/2016/day/5) | · | · |  |
 | 6 | [Day 6](https://adventofcode.com/2016/day/6) | · | · |  |
 | 7 | [Day 7](https://adventofcode.com/2016/day/7) | · | · |  |
