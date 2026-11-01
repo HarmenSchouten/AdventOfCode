@@ -1,8 +1,8 @@
 # Advent of Code 2016
 
-[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2016) · **8 / 50** stars
+[← All years](../README.md) · [Puzzles on adventofcode.com](https://adventofcode.com/2016) · **10 / 50** stars
 
-`★★★★· ····· ····· ····· ·····`
+`★★★★★ ····· ····· ····· ·····`
 
 | Day | Puzzle | Part 1 | Part 2 | Notes |
 |:-:|---|:-:|:-:|---|
@@ -10,7 +10,7 @@
 | 2 | [Bathroom Security](https://adventofcode.com/2016/day/2) | [★](Day02/Part1.ts) | [★](Day02/Part2.ts) |  |
 | 3 | [Squares With Three Sides](https://adventofcode.com/2016/day/3) | [★](Day03/Part1.ts) | [★](Day03/Part2.ts) |  |
 | 4 | [Security Through Obscurity](https://adventofcode.com/2016/day/4) | [★](Day04/Part1.ts) | [★](Day04/Part2.ts) |  |
-| 5 | [Day 5](https://adventofcode.com/2016/day/5) | · | · |  |
+| 5 | [How About a Nice Game of Chess?](https://adventofcode.com/2016/day/5) | [★](Day05/Part1.ts) | [★](Day05/Part2.ts) |  |
 | 6 | [Day 6](https://adventofcode.com/2016/day/6) | · | · |  |
 | 7 | [Day 7](https://adventofcode.com/2016/day/7) | · | · |  |
 | 8 | [Day 8](https://adventofcode.com/2016/day/8) | · | · |  |
